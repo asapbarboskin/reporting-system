@@ -1,0 +1,62 @@
+.footerContainer {
+	padding: 16px;
+	background-color: #fff;
+	border-top: 1px solid #cad7df;
+}
+.mainFooter {
+	max-width: 1100px;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+.leftPath {
+	flex: 0.8 1;
+}
+.footerTitle {
+	font-size: 24px;
+	margin-bottom: 25px;
+	margin-top: 23px;
+	font-weight: 500;
+}
+.contactNumbers {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 11px;
+	margin-top: 5px;
+}
+.phoneContainer {
+	display: flex;
+	align-items: center;
+	margin-right: 54px;
+}
+
+.phoneIcon {
+	cursor: pointer;
+	margin-right: 10px;
+	width: 54px;
+	aspect-ratio: auto 54 / 54;
+	height: 54px;
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}
+.label {
+	margin-bottom: 6px;
+	font-size: 14px;
+	color: #364954;
+}
+.phoneNumber {
+	margin-left: 0;
+	font-size: 24px;
+	color: #364954;
+	font-weight: 700;
+	margin-top: 2px;
+}
+.logoNis {
+	max-width: 100%;
+	margin-top: 0;
+	width: 175px;
+	aspect-ratio: auto 175 / 96;
+	height: 96px;
+	overflow-clip-margin: content-box;
+	overflow: clip;
+}

@@ -1,0 +1,108 @@
+:root {
+	--arc-palette-backgroundExtra: #fdfdfdff;
+	--arc-palette-background: #eeeeeeff;
+	--arc-palette-subtitle: #bcbcbcff;
+	--arc-palette-foregroundSecondary: #969696ff;
+	--arc-palette-cutoutColor: #f0f0f0ff;
+	--arc-palette-hover: #ddddddff;
+	--arc-palette-maxContrastColor: #575757ff;
+	--arc-palette-minContrastColor: #f0f0f0ff;
+	--arc-palette-focus: #abababff;
+	--arc-background-simple-color: #666666ff;
+	--arc-palette-title: #1a1a1aff;
+	--arc-palette-foregroundPrimary: #666666ff;
+	--arc-palette-foregroundTertiary: #f0f0f0ff;
+	background-color: #fff;
+	--font-size-xs: 12px;
+	--font-size-base: 16px;
+	--font-size-sm: 14px;
+	--font-size-21xl: 40px;
+	--font-size-5xl: 24px;
+	--font-size-13xl: 32px;
+
+	/* Colors */
+	--color-gray-200: #fbfbfb;
+	--color-gray-100: #1e293b;
+	--color-white: #fff;
+	--color-aliceblue: #e2e8f0;
+	--color-lightslategray-100: #94a3b8;
+	--color-lightslategray-200: rgba(148, 163, 184, 0.45);
+	--color-lightskyblue: #55bbeb;
+	--color-whitesmoke: #eef2f6;
+
+	/* Gaps */
+	--gap-3xl-8: 22.8px;
+	--gap-23xl: 42px;
+	--gap-2xl: 21px;
+	--gap-lg: 18px;
+	--gap-xl: 20px;
+	--gap-9xs: 4px;
+	--gap-4xs: 9px;
+	--gap-18xl: 37px;
+	--gap-47xl: 66px;
+	--gap-14xl: 33px;
+	--gap-34xl: 53px;
+	--gap-7xl: 26px;
+	--gap-4xl-9: 23.9px;
+	--gap-5xl-9: 24.9px;
+	--gap-5xs: 8px;
+
+	/* Paddings */
+	--padding-4xl: 23px;
+	--padding-xl: 20px;
+	--padding-mid: 17px;
+	--padding-sm: 14px;
+	--padding-lg: 18px;
+	--padding-mini: 15px;
+	--padding-12xs: 1px;
+	--padding-8xs-5: 4.5px;
+	--padding-5xs: 8px;
+	--padding-11xs: 2px;
+	--padding-xs: 12px;
+	--padding-5xl: 24px;
+	--padding-2xs: 11px;
+	--padding-3xs: 10px;
+	--padding-9xs: 4px;
+	--padding-base: 16px;
+
+	/* Border radiuses */
+	--br-5xs: 8px;
+	--br-9xs: 4px;
+	--br-base: 16px;
+	--br-31xl: 50px;
+	--br-981xl: 1000px;
+}
+* {
+	font-style: normal;
+	font-weight: 400;
+	color: #2e3138;
+	font-family: Inter, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Inter, sans-serif;
+	font-style: normal;
+	overscroll-behavior: contain;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	scroll-behavior: smooth;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+div {
+	display: block;
+	unicode-bidi: isolate;
+}
+.main {
+	height: 800px;
+	width: 100%;
+	z-index: 1000;
+	animation: opacityAnimation 4s ease-out;
+	background: url('/bg.webp') no-repeat center;
+	background-size: cover;
+}

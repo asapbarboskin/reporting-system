@@ -1,0 +1,97 @@
+.title {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	font-size: 16px;
+}
+.titleMain {
+	font-size: 30px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.loading {
+	font-weight: bold;
+	padding-top: 350px;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1400px;
+}
+.content {
+	margin: 0 auto;
+	width: 1440px;
+	height: 800px;
+}
+.weekday {
+	text-align: center;
+}
+.weekDayTitle {
+	letter-spacing: 1px;
+	display: inline-block;
+	font-size: 16px;
+	width: 137px;
+	font-weight: bold;
+	width: 180px;
+	height: 50px;
+
+	border-bottom: 3px solid #333;
+}
+.active {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.overlay {
+	background-color: hsla(0, 0%, 0%, 0.648);
+}
+.hidden {
+	display: none;
+}
+.overlayInner {
+	background-color: white;
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 20px;
+	padding: 20px 20px;
+}
+.breaker {
+	width: 300px;
+	height: 1px;
+	border-bottom: 1px solid #696969;
+	background-color: var(--color-mid-gray);
+}
+.active .overlayInner {
+	display: flex; /* Only display when parent is active */
+}
+.li {
+	margin-top: 10px;
+	list-style: none;
+	cursor: pointer;
+	text-decoration: underline;
+	transition: all 0.3s ease;
+}
+.li:hover {
+	color: #00b3ff;
+}
+.title {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.titleStudents {
+	font-weight: bold;
+	font-size: 40px;
+	padding: 0;
+}

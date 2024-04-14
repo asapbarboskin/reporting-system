@@ -1,0 +1,95 @@
+.groupParent {
+	margin-top: 10px;
+	width: 250px;
+	height: 221px;
+
+	font-size: var(--font-size-xs);
+	color: var(--color-gray-100);
+	font-family: var(--font-inter);
+}
+
+.groupItem {
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	border-radius: var(--br-5xs);
+	background-color: var(--color-white);
+	border: 1px solid var(--color-aliceblue);
+	box-sizing: border-box;
+	width: 242px;
+	padding: 20px 20px 0 20px;
+	box-shadow: 12px 9px 88px 0px rgba(0, 0, 0, 0.1);
+	margin-bottom: 16px;
+}
+.groupParent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%; /* Adjust the width as needed */
+	padding: 20px;
+	box-sizing: border-box;
+	background-color: var(--color-light-gray); /* Example background color */
+}
+.title {
+	font-size: 18px; /* Adjust font size as needed */
+	color: var(--color-black);
+	margin-bottom: 8px; /* Space between title and desc */
+	text-align: left;
+	font-weight: bold;
+	transition: all 0.3s ease;
+}
+.title:hover {
+	color: #71b6ef;
+}
+
+.desc {
+	font-size: 14px;
+	color: var(--color-dark-gray);
+	margin-bottom: 8px;
+	text-align: left;
+}
+
+.studentNumber {
+	text-align: center;
+	font-size: 12px; /* Adjust font size as needed */
+	font-weight: bold;
+	color: var(--color-slate);
+	margin-bottom: 3px; /* Space between studentNumber and breaker */
+	border: solid;
+	background-color: #55bbeb;
+	color: white;
+	width: 50%;
+	padding: 5px 0px;
+	border-radius: 5px;
+}
+
+.breaker {
+	width: 120%;
+	margin-left: -20px;
+	height: 10px;
+	border-bottom: 1px solid #cad7df;
+	background-color: var(--color-mid-gray);
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+
+	padding: 8px;
+	box-sizing: border-box;
+}
+
+.date {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	width: 50%; /* Adjust width as needed */
+	background-color: var(--color-light-gray); /* Placeholder background */
+}
+.img {
+	display: inline;
+	height: 100%;
+	width: 100%;
+}

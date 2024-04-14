@@ -1,0 +1,25 @@
+.weekday {
+	text-align: center;
+}
+.weekDayTitle {
+	letter-spacing: 1px;
+	display: inline-block;
+	font-size: 16px;
+	width: 137px;
+	font-weight: bold;
+	width: 160px;
+	height: 50px;
+	border-bottom: 3px solid #333;
+}
+.column {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.hidden {
+	display: none;
+}
