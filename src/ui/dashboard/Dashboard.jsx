@@ -12,7 +12,7 @@ const Dashboard = ({ onClick }) => {
 	}
 	useEffect(() => {
 		async function fetchData() {
-			const apiUrl = `http://172.20.10.3:5000/schedule`
+			const apiUrl = `http://10.110.118.238:5000/schedule`
 			try {
 				const response = await fetch(apiUrl)
 				if (!response.ok) {

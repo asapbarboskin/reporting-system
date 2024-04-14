@@ -95,3 +95,6 @@
 .chart-container {
 	min-height: px;
 }
+.li {
+	cursor: pointer;
+}

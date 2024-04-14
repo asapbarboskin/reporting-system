@@ -6,7 +6,7 @@ export default function StudentDesc({ student }) {
 	useEffect(() => {
 		async function fetchData() {
 			const apiUrl = `
-			http://172.20.10.3:5000/advice/${student.id}
+			http://10.110.118.238:5000/advice/${student.id}
 			`
 			try {
 				const response = await fetch(apiUrl)
@@ -14,7 +14,6 @@ export default function StudentDesc({ student }) {
 					throw new Error('Could not fetch data')
 				}
 				const data = await response.json()
-				console.log(data)
 				setData(data)
 			} catch (error) {
 				setError(error.message)
@@ -32,7 +31,7 @@ export default function StudentDesc({ student }) {
 		console.log(data)
 		return (
 			<div>
-				<p>{data}</p>
+				<p>{data.advice}</p>
 			</div>
 		)
 	}
