@@ -20,7 +20,7 @@ export default function StudentDesc({ student }) {
 			}
 		}
 		fetchData()
-	}, [])
+	}, [student.id])
 	if (error) {
 		return <p> Error: {error}</p>
 	}

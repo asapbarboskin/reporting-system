@@ -21,7 +21,7 @@ export default function StudentPage({ student }) {
 		}
 
 		fetchData()
-	}, [])
+	}, [student.id])
 	if (error) {
 		return (
 			<div className={styles.content}>
