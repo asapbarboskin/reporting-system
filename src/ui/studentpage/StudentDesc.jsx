@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 
-export default function StudentDesc({ studentId }) {
+export default function StudentDesc({ student }) {
 	const [data, setData] = useState(null)
 	const [error, setError] = useState(null)
 	useEffect(() => {
 		async function fetchData() {
 			const apiUrl = `
-			http://10.101.19.218:5000/advice/${studentId}
+			http://172.20.10.3:5000/advice/${student.id}
 			`
 			try {
 				const response = await fetch(apiUrl)
@@ -14,6 +14,7 @@ export default function StudentDesc({ studentId }) {
 					throw new Error('Could not fetch data')
 				}
 				const data = await response.json()
+				console.log(data)
 				setData(data)
 			} catch (error) {
 				setError(error.message)
@@ -27,9 +28,12 @@ export default function StudentDesc({ studentId }) {
 	if (!data) {
 		return <p> Загрузка...</p>
 	}
-	return (
-		<div>
-			<p>{data}</p>
-		</div>
-	)
+	if (data) {
+		console.log(data)
+		return (
+			<div>
+				<p>{data}</p>
+			</div>
+		)
+	}
 }

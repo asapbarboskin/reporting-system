@@ -7,7 +7,7 @@ export default function StudentPage({ student }) {
 	const [error, setError] = useState(null)
 	useEffect(() => {
 		async function fetchData() {
-			const apiUrl = `http://10.101.19.218:5000/student/${student.id}/weak_topics`
+			const apiUrl = `http://172.20.10.3:5000/student/${student.id}/weak_topics`
 			try {
 				const response = await fetch(apiUrl)
 				if (!response.ok) {
@@ -53,8 +53,8 @@ export default function StudentPage({ student }) {
 						</ul>
 					</div>
 					<div className={styles.description}>
-						<h2>Описание</h2>
-						<StudentDesc student={student.id} />
+						<h2>Совет</h2>
+						<StudentDesc student={student} />
 					</div>
 				</div>
 				<div className={styles['graph-area']}>

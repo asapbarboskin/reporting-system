@@ -11,7 +11,6 @@ function App() {
 	function handleStudentShow(student) {
 		setShowStudent(!showStudent)
 		setStudent(student)
-		console.log(student)
 	}
 	function handleLoggingChange(e) {
 		e.preventDefault()
